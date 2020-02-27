@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/browse"
+        android:icon="@drawable/ic_action_browse"
+        android:title="Browse" />
+
+    <!--<item-->
+        <!--android:id="@+id/favorite"-->
+        <!--android:icon="@drawable/ic_favorite"-->
+        <!--android:title="Favorite" />-->
+
+
+    <item
+        android:id="@+id/borrowed"
+        android:icon="@drawable/ic_action_borrowed"
+        android:title="Borrowed" />
+
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/ic_action_notifications"
+        android:title="Notifications" />
+
+
+    <item
+        android:id="@+id/events"
+        android:icon="@drawable/ic_action_events"
+        android:title="Events" />
+
+    <item
+        android:id="@+id/search_key"
+        android:icon="@drawable/ic_search_key"
+        android:title="Search" />
+
+</menu>
