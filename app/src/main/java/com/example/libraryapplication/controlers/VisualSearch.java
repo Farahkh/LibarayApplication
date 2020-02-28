@@ -1,20 +1,15 @@
 package com.example.libraryapplication.controlers;
 
 import android.app.AlertDialog;
-import android.content.ComponentName;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.util.SparseArray;
 
-import com.example.libraryapplication.MainActivity;
-import com.example.libraryapplication.component.Book;
 import com.example.libraryapplication.utility.LibraryConnection;
 import com.example.libraryapplication.utility.VolleyResponseListener;
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
-
-import java.util.ArrayList;
 
 public class VisualSearch {
 

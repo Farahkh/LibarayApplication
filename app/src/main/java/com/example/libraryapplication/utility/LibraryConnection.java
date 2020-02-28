@@ -17,13 +17,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class LibraryConnection {
 
 Context context;
-    public static final String LIBRARY_ADDRESS = "http://192.168.1.11:3000/library/";
+    public static final String LIBRARY_ADDRESS = "http://192.168.1.3:3000/library/";
 //    public static final String LIBRARY_ADDRESS = "http://10.1.201.160:3000/library/";
 
 
@@ -60,11 +59,7 @@ Context context;
 
                                         Log.d("OcrDetectorProcessor", "Text detected! " +
                                                 block.getValue());
-//                                        Log.d("OcrDetectorProcessor", "Text bounding box: " +
-//                                                "left_ " + block.getBoundingBox().left +
-//                                                ", top_" + block.getBoundingBox().top +
-//                                                ", right_" + block.getBoundingBox().right +
-//                                                ", bottom_" + block.getBoundingBox().bottom);
+//
 
                                         bookIfo.print();
                                         Log.d("OcrDetectorProcessor", "-------------------------------------------------------------------");

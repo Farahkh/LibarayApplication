@@ -1,7 +1,5 @@
 package com.example.libraryapplication.component;
 
-import android.content.Context;
-
 import java.util.ArrayList;
 
 public class BookList {

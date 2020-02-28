@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -90,7 +89,7 @@ public class BookDetails extends AppCompatActivity {
             speakMetadata.stop();
 
         String viewTag = (String) view.getTag();
-
+//TODO manage the audio focus manager functions
         switch (viewTag){
                 case "title":
                     speakMetadata.speak("book title");

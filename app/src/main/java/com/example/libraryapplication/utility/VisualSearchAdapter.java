@@ -3,11 +3,9 @@ package com.example.libraryapplication.utility;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.libraryapplication.BookDetails;
@@ -15,7 +13,6 @@ import com.example.libraryapplication.R;
 import com.example.libraryapplication.component.Book;
 
 import java.io.ByteArrayOutputStream;
-import java.io.FileOutputStream;
 import java.util.List;
 
 import androidx.recyclerview.widget.RecyclerView;

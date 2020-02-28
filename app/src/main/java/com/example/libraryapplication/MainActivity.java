@@ -1,9 +1,6 @@
 package com.example.libraryapplication;
 
 import android.Manifest;
-import android.app.Application;
-import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.SurfaceTexture;
@@ -35,13 +32,11 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.libraryapplication.component.Book;
 import com.example.libraryapplication.controlers.VisualSearch;
-import com.example.libraryapplication.utility.TitleRectangle;
 import com.example.libraryapplication.utility.VisualSearchAdapter;
 import com.example.libraryapplication.utility.VolleyResponseListener;
 
@@ -234,7 +229,7 @@ public class MainActivity extends Fragment {
                             CameraCharacteristics.SCALER_STREAM_CONFIGURATION_MAP);
 //                    previewSize = streamConfigurationMap.getOutputSizes(SurfaceTexture.class)[0];
                     previewSize =chooseOptimalSize(streamConfigurationMap
-                            .getOutputSizes(SurfaceTexture.class), camera_layout.getWidth(), camera_layout.getHeight());
+                            .getOutputSizes(SurfaceTexture.class), 300, 380);
                     this.cameraId = cameraId;
                 }
             }
@@ -256,6 +251,7 @@ public class MainActivity extends Fragment {
 
     private Size chooseOptimalSize(Size[] outputSizes, int width, int height) {
         double preferredRatio = height / (double) width;
+
         Size currentOptimalSize = outputSizes[0];
         double currentOptimalRatio = currentOptimalSize.getWidth() / (double) currentOptimalSize.getHeight();
         for (Size currentSize : outputSizes) {
